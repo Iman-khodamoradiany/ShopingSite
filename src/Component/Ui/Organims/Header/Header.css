@@ -1,0 +1,14 @@
+.CardLength{
+    position: relative;
+}
+
+/* .CardLength::after{
+    content: "3";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #F0C400;
+    border-radius: 50%;
+    top: -3px;
+    right: -4px;
+} */
