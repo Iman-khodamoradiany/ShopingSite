@@ -8,10 +8,10 @@ import useMonyFormat from "../../../../core/Hooks/useMonyFormat"
 
 function NewProductsList() {
     const qury = GetQueryRequest()
-
+    console.log(qury.data)
     return (
         <div className="flex justify-between items-center gap-4 w-full">
-            {qury.data && qury.data.slice(1, 6).map((item) => (
+            {qury.data && qury.data.data.slice(1, 6).map((item) => (
                 <Link className="border flex justify-between items-center flex-col pb-5 h-[380px] overflow-hidden rounded-xl shadow-xl">
                     <div className="w-full">
                         <Img src={item.img} />
