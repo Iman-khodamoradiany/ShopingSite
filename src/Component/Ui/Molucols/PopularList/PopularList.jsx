@@ -4,7 +4,7 @@ import Text from "../../Atom/Text/Test";
 
 function PopularList() {
     return (
-        <div className="flex justify-between w-full items-center">
+        <div className="flex justify-evenly w-full items-center">
             {PopularProducts.map((item) => (
                 <div className="flex justify-center items-center flex-col cursor-pointer">
                     <img src="" alt="" />
