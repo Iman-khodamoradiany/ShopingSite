@@ -1,6 +1,3 @@
-import Button from "../../Atom/Button/Button"
-import Img from "../../Atom/Img/Img"
-import Text from "../../Atom/Text/Test"
 import ProductPosterOne from "../../Molucols/ProductPosterOne/ProductPosterOne"
 import ProductPosterTow from "../../Molucols/ProductPosterTow/ProductPosterTow"
 

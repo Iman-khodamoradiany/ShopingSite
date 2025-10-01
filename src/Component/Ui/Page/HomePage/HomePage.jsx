@@ -11,8 +11,8 @@ function HomePage() {
             <HomePageHeader />
             <PopularSection />
             <NewProduct />
-            <OfferProduct />
             <ProductPoster />
+            <OfferProduct />
         </div>
     )
 }
