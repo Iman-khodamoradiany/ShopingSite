@@ -4,13 +4,15 @@ import NewProductTitle from "../../Molucols/NewProductTitle/NewProductTitle"
 import NewProductsList from "../../Molucols/NewProductsList/NewProductsList"
 import NewProduct from "../../Organims/NewProduct/NewProduct"
 import OfferProduct from "../../Organims/OfferProduct/OfferProduct"
+import ProductPoster from "../../Organims/ProductPoster/ProductPoster"
 function HomePage() {
     return (
         <div className="w-full flex justify-center items-center gap-8 flex-col">
             <HomePageHeader />
             <PopularSection />
             <NewProduct />
-            <OfferProduct />    
+            <OfferProduct />
+            <ProductPoster />
         </div>
     )
 }

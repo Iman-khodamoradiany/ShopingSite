@@ -11,12 +11,11 @@ import OfferProductTitle from "../../Molucols/OfferProductTitle/OfferProductTitl
 function OfferProduct() {
 
     return (
-        <div className="w-[80%] h-[420px] gap-2 flex justify-center items-center flex-col z-10 bg-[#F0C400] rounded-3xl">
+        <div className="w-[80%] h-[420px] gap-2 flex justify-center items-center flex-col z-10 bg-[#F0C400] rounded-3xl my-10">
             <div className="w-[92%] text-[1.4vw] text-gray-800 flex justify-start items-center">
                 <Link>بیشتر</Link>
             </div>
             <div className="w-full flex justify-end itmes-center">
-
                 <OfferSlider />
                 <OfferProductTitle />
             </div>
