@@ -8,14 +8,14 @@ import { useDiscountOffer } from "../../../../core/Hooks/useDiscountOffer"
 
 function ProducCard({ item }) {
     return (
-        <Link className="border flex justify-between items-center flex-col pb-5 h-[380px] overflow-hidden rounded-xl shadow-xl">
+        <Link className="border bg-white flex justify-between items-center flex-col pb-5 h-[350px] overflow-hidden rounded-xl shadow-xl">
             <div className="w-full">
-                <Img src={item.img} />
+                <Img src={item.img ? item.img : '/public/NotFount/NotFoundImg.jpg'} />
             </div>
             <div className="w-full px-3 text-right flex justify-end items-center text-[1vw]">
                 <Text className={'text-gray-600'}>{item.Description}</Text>
             </div>
-            <div className="w-full flex justify-between items-center px-4" dir="rtl">
+            <div className="w-full flex justify-between items-end px-4" dir="rtl">
                 <Button>
                     <Icon icons={'BuyToCard'} />
                 </Button>
