@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Persia;
+    src: url(/public/Font/Yekan.ttf);
+}
+
+* {
+    font-family: Persia;
+}
