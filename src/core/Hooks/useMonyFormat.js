@@ -1,4 +1,4 @@
-function useMonyFormat(number) {
+function useMonyFormat(number = 0) {
     return number.toLocaleString()
 }
 

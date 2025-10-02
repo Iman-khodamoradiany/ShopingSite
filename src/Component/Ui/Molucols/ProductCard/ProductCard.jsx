@@ -21,8 +21,8 @@ function ProducCard({ item }) {
                 </Button>
                 {item.Offer ?
                     < div className="flex justify-start items-end flex-col">
-                        <Text className={'text-[1.5vw] text-[#FFB800]'}><span>{useMonyFormat(useDiscountOffer(item.Price, item.Offer))}</span> تومان</Text>
-                        <Text className={'line-through text-[1vw]'}><span>{useMonyFormat(item.Price)}</span> تومان</Text>
+                        <Text className={'text-[1.5vw] text-[#FFB800]'}><span>{item.Price ? useMonyFormat(useDiscountOffer(item.Price, item.Offer)) : useMonyFormat(0)}</span> تومان</Text>
+                        <Text className={'line-through text-[1vw]'}><span>{item.Price ? useMonyFormat(item.Price) : useMonyFormat(0)}</span> تومان</Text>
                     </div>
                     : <div className="flex justify-center items-center gap-1">
 

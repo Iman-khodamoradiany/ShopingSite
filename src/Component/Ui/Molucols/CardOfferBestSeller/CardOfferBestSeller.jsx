@@ -1,4 +1,12 @@
-function CardOfferBestSeller() {
+import { Link } from "react-router-dom"
+import Img from "../../Atom/Img/Img"
+import Text from "../../Atom/Text/Test"
+import Button from "../../Atom/Button/Button"
+import Icon from "../../Atom/Icon/Icon"
+import useMonyFormat from "../../../../core/Hooks/useMonyFormat"
+import { useDiscountOffer } from "../../../../core/Hooks/useDiscountOffer"
+
+function CardOfferBestSeller({ item }) {
     return (
         <Link className="border relative bg-white flex justify-between items-center flex-col pb-5 h-[350px] overflow-hidden rounded-xl shadow-xl">
             <div className="w-full">
@@ -13,8 +21,8 @@ function CardOfferBestSeller() {
                 </Button>
                 {item.Offer ?
                     < div className="flex justify-start items-end flex-col">
-                        <Text className={'text-[1.5vw] text-[#FFB800]'}><span>{useMonyFormat(useDiscountOffer(item.Price, item.Offer))}</span> تومان</Text>
-                        <Text className={'line-through text-[1vw]'}><span>{useMonyFormat(item.Price)}</span> تومان</Text>
+                        <Text className={'text-[1.5vw] text-[#FFB800]'}><span>{item.Price ? useMonyFormat(useDiscountOffer(item.Price, item.Offer)) : useMonyFormat(0)}</span> تومان</Text>
+                        <Text className={'line-through text-[1vw]'}><span>{item.Price ? useMonyFormat(item.Price) : useMonyFormat(0)}</span> تومان</Text>
                     </div>
                     : <div className="flex justify-center items-center gap-1">
 

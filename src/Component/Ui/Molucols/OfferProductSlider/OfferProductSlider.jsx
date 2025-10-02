@@ -22,7 +22,6 @@ function OfferProductSlider({ swiperRef }) {
         }
     }, [query.data])
 
-    console.log(OfferProduct)
     return (
         <Swiper
             modules={[Navigation, Autoplay]}
