@@ -8,6 +8,7 @@ import ProductPoster from "../../Organims/ProductPoster/ProductPoster"
 import GridSection from "../../Organims/GridSection/GridSection"
 import BestSellerSection from "../../Organims/BestSellerSection/BestSellerSection"
 import Suggestion from "../../Organims/Suggestion/Suggestion"
+import PosterSection from "../../Organims/PosterSection/PosterSectio"
 function HomePage() {
     return (
         <div className="w-full flex justify-center items-center gap-8 flex-col">
@@ -18,6 +19,7 @@ function HomePage() {
             <OfferProduct />
             <GridSection />
             <BestSellerSection />
+            <PosterSection />
             <Suggestion />
         </div>
     )
