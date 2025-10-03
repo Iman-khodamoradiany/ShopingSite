@@ -4,7 +4,7 @@ import Header from "../Ui/Organims/Header/Header"
 const Layout = ({ children }) => {
     return (
         <div>
-            <header className="w-full">
+            <header className="w-full shadow-xl">
                 <Header />
             </header>
             <main>
