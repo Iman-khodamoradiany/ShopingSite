@@ -3,7 +3,7 @@ import Img from "../../Atom/Img/Img"
 
 function PopularBrandItem() {
     return (
-        <div className="flex justify-between w-full items-center">
+        <div className="flex justify-between gap-4 w-full items-center">
             {PopularBrandData.map((item) => (
                 <div>
                     <Img src={item} />
