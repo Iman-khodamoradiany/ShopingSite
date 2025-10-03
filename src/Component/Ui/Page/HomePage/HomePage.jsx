@@ -1,5 +1,5 @@
 import HomePageHeader from "../../Molucols/HomePageHeader/HomePageHeader"
-import PopularSection from "../../Organims/Header/PopularSection/PopularSection"
+import PopularSection from "../../Organims/PopularSection/PopularSection"
 import NewProduct from "../../Organims/NewProduct/NewProduct"
 import OfferProduct from "../../Organims/OfferProduct/OfferProduct"
 import ProductPoster from "../../Organims/ProductPoster/ProductPoster"

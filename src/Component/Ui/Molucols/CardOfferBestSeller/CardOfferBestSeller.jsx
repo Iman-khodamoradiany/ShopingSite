@@ -8,7 +8,7 @@ import { useDiscountOffer } from "../../../../core/Hooks/useDiscountOffer"
 
 function CardOfferBestSeller({ item }) {
     return (
-        <Link className="border relative bg-white flex justify-between items-center flex-col pb-5 h-full overflow-hidden rounded-xl shadow-xl">
+        <Link to={`/Products/${item.id}`} className="border relative bg-white flex justify-between items-center flex-col pb-5 h-full overflow-hidden rounded-xl shadow-xl">
             <div className="w-full">
                 <Img src={item.img ? item.img : '/public/NotFount/NotFoundImg.jpg'} />
             </div>
