@@ -3,6 +3,15 @@
     src: url(/public/Font/Yekan.ttf);
 }
 
+@font-face {
+    font-family: vazirmatn;
+    src: url(/public/Font/Vazirmatn-Medium.ttf);
+}
+
 * {
     font-family: Persia;
+}
+
+.test{
+    font-family: vazirmatn;
 }
