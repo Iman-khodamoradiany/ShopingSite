@@ -4,8 +4,10 @@ import Button from "../../Atom/Button/Button";
 import Text from "../../Atom/Text/Test";
 import NavBarLink from "../../Molucols/NavBarLink/NavBarLink";
 import './Header.css'
+import { DataCard } from "../../../../core/Services/Query/GetProductCard/api";
 
 function Header() {
+    const CardData = DataCard()
     return (
         <nav className="w-full flex justify-between items-center px-20 py-2" dir="rtl">
             <div className="w-1/2 flex justify-start items-cetner gap-8">
@@ -22,9 +24,11 @@ function Header() {
                     </Button>
                 </div>
                 <div className="CardLength">
-                    <Icon icons={'basket'} />
+                    <Link to={'/CardPage'}>
+                        <Icon icons={'basket'} />
+                    </Link>
                     <div className="w-[15px] h-[15px] bg-[#F0C400] absolute -top-1 rounded-full flex justify-center items-center text-[0.7vw]">
-                        <Text className={'h-full mb-1 font-bold'}>0</Text>
+                        <Text className={'h-full mb-1 font-bold'}>{CardData.data ? CardData.data.data.length : 0}</Text>
                     </div>
                 </div>
             </div>

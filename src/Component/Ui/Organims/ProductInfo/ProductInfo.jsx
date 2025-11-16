@@ -19,8 +19,6 @@ function ProductInfo() {
         }
     }, [AllProduct.data, id]);
 
-    console.log(find);
-
     if (AllProduct.isPending) return <p>{AllProduct.isPending}</p>;
 
     return (
@@ -29,7 +27,7 @@ function ProductInfo() {
                 <div className="w-full flex justify-center items-start p-3 h-[500px]">
                     <div className="w-1/2 flex justify-between h-full items-end flex-col gap-5">
                         <ImagesProducts find={find} />
-                        <AddProductToCard />
+                        <AddProductToCard item={find} />
                     </div>
                     <ImgSection find={find} />
                 </div>

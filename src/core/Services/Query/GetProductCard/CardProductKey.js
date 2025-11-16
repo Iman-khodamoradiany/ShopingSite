@@ -1,0 +1,1 @@
+export const CardProductKey = (id) => ['Card', id]
